@@ -59,6 +59,7 @@ RUN echo "Begin" && ls -lrt \
   && { [[ -e /usr/bin/python ]] || ln -sf /usr/bin/python3.8 /usr/bin/python; } \
   && python -m ensurepip \
   && python -m pip install --upgrade --no-cache-dir pip \
+  && { [[ -e /usr/bin/pip ]] || ln -sf /usr/bin/pip3 /usr/bin/pip; } \
   && cd /usr/bin \
   && ls -l python* pip* \
   && echo "********** 安装python包" \
