@@ -72,7 +72,7 @@ RUN echo "Begin" && ls -lrt \
   && pip install --no-cache-dir cx_Oracle==8.0.1 \
   && pip install --no-cache-dir redis3==3.5.2.2 \
   && pip install --no-cache-dir kafka-python==2.0.2 \
-  && pip install --no-cache-dir elasticsearch7==7.9.1 \
+  && pip install --no-cache-dir elasticsearch==7.10.1 \
 #  && pip install --no-cache-dir hdfs==2.2.2 \
   && echo "********** 删除依赖包" \
   && apk del .build-deps \
